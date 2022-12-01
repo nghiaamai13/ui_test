@@ -5,7 +5,7 @@ import LeftBar from "./components/LeftBar.jsx";
 function App() {
   return (
     <div className=" bg-white dark:bg-black">
-      <main className="mx-auto flex min-h-screen max-w-[1280px] justify-center">
+      <main className="mx-auto flex min-h-screen max-w-[1400px] justify-center">
         <LeftBar />
         <Feed />
         <RightBar />

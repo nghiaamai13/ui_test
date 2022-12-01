@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import TextareaAutosize from "react-textarea-autosize";
 import { BsImage } from "react-icons/bs";
 import { AiOutlineFileGif } from "react-icons/ai";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -15,8 +15,10 @@ const PostBox = () => {
         alt="prof"
       />
       <div className="flex w-full flex-col">
-        <textarea
-          className="mr-6 mt-2 bg-inherit text-2xl font-semibold text-white outline-none"
+        <TextareaAutosize
+          minRows={3}
+          maxRows={16}
+          className="mr-6 mt-2 resize-none bg-inherit text-2xl font-semibold text-white outline-none"
           placeholder="What's happening ?"
         />
         <div className="flex items-center justify-between">
@@ -29,7 +31,7 @@ const PostBox = () => {
           </div>
           <button
             className="post-btn-transition mt-5 mr-6 mb-2 flex h-12 max-w-[100px]  flex-1 items-center rounded-full bg-emerald-300
-            px-10 font-semibold"
+            px-9 font-semibold"
           >
             <span>Post</span>
           </button>

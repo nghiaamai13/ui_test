@@ -4,7 +4,7 @@ const LeftButton = ({ Icon, text, active }) => {
       <Icon className="btn-side" />
       <p
         className={`hidden text-[17px] text-black dark:text-white lg:inline ${
-          active ? "font-bold" : "font-semibold"
+          active ? "text-[20px] font-bold" : "font-semibold"
         }`}
       >
         {text}
