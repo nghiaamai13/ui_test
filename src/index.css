@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-side {
+    @apply h-8 w-8 cursor-pointer text-black
+     opacity-70
+     transition-all duration-300 ease-out active:scale-125
+   dark:text-white;
+  }
+
+  .btn-post {
+    @apply h-6 w-6 cursor-pointer text-emerald-400 transition-all duration-300 ease-out hover:scale-110;
+  }
+
+  .btn-top {
+    @apply h-6 w-6 cursor-pointer text-black transition-all ease-out hover:scale-105 active:scale-125 dark:text-emerald-300;
+  }
+
+  .border-layout {
+    @apply border-borderLight dark:border-borderDark;
+  }
+
+  .post-btn-transition {
+    @apply transition-all duration-200 ease-in hover:scale-105 hover:bg-emerald-200 active:scale-110;
+  }
+}
