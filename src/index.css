@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .hoverAnimation {
+    @apply cursor-pointer rounded-full transition-all duration-200 hover:bg-shadowHoverLight dark:hover:bg-shadowHoverDark;
+  }
+
   .btn-side {
     @apply h-8 w-8 cursor-pointer text-black
      opacity-70

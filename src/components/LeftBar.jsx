@@ -39,7 +39,10 @@ const LeftBar = () => {
           <span className="font-bold text-white">Post</span>
         </button>
       </div>
-      <div className="mb-4 flex h-10 items-center pl-2 lg:ml-10 lg:items-start">
+      <div
+        className="hoverAnimation mb-5  flex h-14 items-center
+         justify-center pt-1 lg:ml-12 lg:w-[220px] lg:items-start"
+      >
         <img
           className="h-12 rounded-full"
           src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5OTk2ODUyMTMxNzM0ODcy/gettyimages-1229892983-square.jpg"
@@ -50,6 +53,7 @@ const LeftBar = () => {
           <br />
           <span className="text-sm opacity-60">@elonmusk69</span>
         </span>
+        <MdOutlineMoreHoriz className="btn-side mt-1 ml-2 hidden dark:text-white lg:inline" />
       </div>
     </div>
   );
