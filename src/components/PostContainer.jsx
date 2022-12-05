@@ -1,7 +1,17 @@
 import React from "react";
+import PostCard from "./PostCard";
 
 const PostContainer = () => {
-  return <div className="h-[1280px] w-full overflow-hidden">PostContainer</div>;
+  return (
+    <div className="flex w-full flex-col overflow-hidden ">
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+    </div>
+  );
 };
 
 export default PostContainer;
